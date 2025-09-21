@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОКШ Техно Строй</title>
+    <style>
+        /* Общие стили */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Стили шапки */
+        .header {
+            background-color: #00008b; /* Темно-синий цвет */
+            padding: 2px 20px;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .header .logo img {
+            width: 70px;
+            margin-right: 20px;
+        }
+        
+        /* Стили основного контента */
+        .main-content {
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .description {
+            flex-grow: 1;
+            margin-right: 40px;
+        }
+
+        .button-container {
+            text-align: right;
+        }
+
+        .members-button {
+            background-color: transparent;
+            color: deepskyblue;
+            border: 2px solid deepskyblue;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .members-button:hover {
+            background-color: deepskyblue;
+            color: white;
+        }
+
+        /* Стили для секции с двумя изображениями */
+        .image-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 0 40px 40px 40px;
+            gap: 20px;
+        }
+
+        .image-link {
+            width: 50%;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        
+        .image-link:hover {
+            transform: scale(1.03);
+        }
+
+        .image-link img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* --- ОБНОВЛЕННЫЕ СТИЛИ ДЛЯ СПИСКА ПРОЕКТОВ --- */
+        .projects-list-section {
+            padding: 40px;
+            background-color: #ffffff; 
+        }
+
+        .projects-list-section h2 {
+            text-align: center;
+            font-size: 2.2em;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .projects-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 40px; /* Увеличили промежуток между проектами */
+        }
+        
+        .project-item {
+            display: flex; /* Располагаем картинку и текст в ряд */
+            align-items: center; /* Выравниваем по центру по вертикали */
+            gap: 25px; /* Промежуток между картинкой и текстом */
+        }
+
+        .project-item-image {
+            flex-shrink: 0; /* Запрещаем картинке сжиматься */
+            width: 150px; /* Фиксированная ширина для картинки */
+            height: 150px; /* Фиксированная высота для картинки */
+        }
+
+        .project-item-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Картинка будет полностью заполнять блок, возможно, обрезаясь */
+            border-radius: 10px;
+        }
+        
+        .project-item-text h3 {
+            font-size: 1.5em;
+            color: #00008b;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .project-item-text p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+            margin: 0;
+        }
+        /* --- КОНЕЦ ОБНОВЛЕННЫХ СТИЛЕЙ --- */
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img src="img\logo.png" alt="Логотип ОКШ Техно Строй">
+        </div>
+        <h1>ОКШ Техно Строй</h1>
+    </div>
+
+    <div class="main-content">
+        <div class="description">
+            <p>
+                Мы, творческое объединение, которые было создано с целью осваивать новые технологии и творить шедевры. Чтобы вступить к нам, вам нужно связаться с нашими участниками.
+            </p>
+            <p>
+  <span style="font-size: 1.2em; vertical-align: middle;">📞</span>
+  <span style="vertical-align: middle;">Горячая линия: +7 999 790 88-51</span>
+</p>
+        </div>
+        <div class="button-container">
+            <a href="members.html">
+                <button class="members-button">Наши участники</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="image-section">
+        <a href="https://1mkk.mskobr.ru" class="image-link" target="_blank" rel="noopener noreferrer">
+            <img src="img\picture1.png" alt="">
+        </a>
+        <a href="https://1mkk.mskobr.ru" class="image-link" target="_blank" rel="noopener noreferrer">
+            <img src="path/to/your/second-image.jpg" alt="Описание второго изображения">
+        </a>
+    </div>
+
+    <section class="projects-list-section">
+        <h2>Наши проекты</h2>
+        <div class="projects-container">
+
+            <div class="project-item">
+                <div class="project-item-image">
+                    <img src="path/to/project1-image.jpg" alt="Изображение Проекта 1">
+                </div>
+                <div class="project-item-text">
+                    <h3>Проект 1</h3>
+                    <p>
+                        Описание 
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-item-image">
+                    <img src="path/to/project2-image.jpg" alt="Изображение Проекта 2">
+                </div>
+                <div class="project-item-text">
+                    <h3>Проект 2</h3>
+                    <p>
+                        Описание
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-item-image">
+                    <img src="path/to/project3-image.jpg" alt="Изображение Проекта 3">
+                </div>
+                <div class="project-item-text">
+                    <h3>Проект 3</h3>
+                    <p>
+                        Описание
+                        `project-item`, сколько вам необходимо.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    </body>
+</html>
